@@ -5,34 +5,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu primeiro site</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>Olá, eu sou Reginaldo Souza</h1>
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav-lista">
+                <li><a href="#inicio">Início</a> </li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#certificados">Certificados</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <p>Estou iniciando minha jornada em Front End e esse é meu primeiro site, pretendo fazer transição de carreira e
-        seguir na área de Dev e me especializar a cada dia.
+    <main>
 
-    </p>
+        <section id="inicio" class="secao inicio">
 
-    <h2>O que estou aprendendo</h2>
+            <h1>Reginaldo Oliveria</h1>
+            <p>Desenvolvedor Front-End em evolução 🚀</p>
 
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>Tailwind</li>
-    </ul>
+        </section>
 
-    <p>Acesse meu perfil:
+        <section id="sobre" class="secao sobre">
 
-    <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <h2>Sobre mim</h2>
+            <p>
+                Sou estudante de Front-End, focado em HTML, CSS e JavaScript,
+                buscando construir interfaces modernas e acessíveis.
+            </p>
+        </section>
 
-    <img src="imagem/regi.png" alt="Imagem de perfil">
+        <section id="projetos" class="secao projetos">
 
-    </p>
+            <h2>Projetos</h2>
+            <div class="cards-projetos">
+                <article class="card-projeto">
+                    <h3>Portfólio Pessoal</h3>
+                    <p>Site responsivo feito com MTML, CSS e JavaScript.</p>
+                    <a href="#" class="btn-projeto">Ver projeto</a>
+                </article>
+
+                <article class="card-projeto">
+                    <h3>Portfólio Pessoal</h3>
+                    <p>Site responsivo feito com MTML, CSS e JavaScript.</p>
+                    <a href="#" class="btn-projeto">Ver projeto</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="certificados" class="secao certificados">
+
+            <h2>Certificados</h2>
+            <ul class="timeline-certificados">
+                <li class="certificado">
+                    <span class="marcador"></span>
+                    <div class="conteudo-certificado">
+
+                        <h3>Desenvolvedor Front-End</h3>
+
+                        <span class="instituicao">Instituto Benjamin Constant - 160h</span>
+                        <p>Criação de aplicações front-end com HTML, CSS, JavaScript e React,
+                            aplicando conceitos de UI/UX, acessibilidade e boas práticas.</p>
+                        <a href="certificados/desenvolvedor-front-end.pdf" class="link-certificado" target="_blank"
+                            rel="noopener noreferrer">
+                            📄 Ver certificado
+                        </a>
+                    </div>
+                </li>
+
+                <li class="certificado">
+                    <span class="marcador"></span>
+                    <div class="conteudo-certificado">
+
+                        <h3>Missão Programação com IA do Zero</h3>
+
+                        <span class="instituicao">DevClub - 72h</span>
+                        <p>Desenvolvimento de projeto usando linguagens de programação HTML, CSS e JavaScript com
+                            integração de IA.</p>
+                        <a href="certificados/programador-em-72h.pdf" class="link-certificado" target="_blank">
+                            📄 Ver certificado
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section id="contato" class="secao contato">
+            <h2>Contato</h2>
+            <p>E-mail: reg.oliveira82@hotmail.com</p>
+            <p>Whatsapp: +55 92 98409 8469</p>
+        </section>
+
+
+
+    </main>
+
+    <footer class="footer">
+
+        <p>Copyright &copy; 2026 - Reginaldo Oliveira - Desenvolvedor Front End.</p>
+
+    </footer>
+
+    <script src="script.js"></script>
 
 </body>
 
